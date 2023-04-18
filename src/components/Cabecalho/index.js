@@ -10,8 +10,9 @@ function Cabecalho() {
         <img src={logo} alt="Logo do Receitas-App"></img>
       </Link>
       <nav>
-        <CabecalhoLink url="./">Home</CabecalhoLink>
-        <CabecalhoLink url="./Favoritos">Favoritos</CabecalhoLink>
+        <CabecalhoLink url="../">Home</CabecalhoLink>
+        <CabecalhoLink url="../Incluir">Incluir receitas</CabecalhoLink>
+        <CabecalhoLink url="../Favoritas">Favoritas</CabecalhoLink>
       </nav>
     </header>
   );
