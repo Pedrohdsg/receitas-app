@@ -1,9 +1,11 @@
 import styles from './Card.module.css'
 
-function Card(){
+function Card( {id, titulo}){
     return (
         <>
-        <input className={styles.nome} placeholder='Insira o nome da receita' required/>
+        <div className={styles.container}>
+            <h2>{titulo}</h2>
+        </div>
         </>
     )
 }
