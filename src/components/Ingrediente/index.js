@@ -16,6 +16,7 @@ function Ingrediente() {
           <option value="a gosto">à gosto</option>
           <option value="pitada">pitada</option>
         </select>
+        <input type="button" value="Incluir item" className={styles.btn} onClick />
       </div>
     </>
   );

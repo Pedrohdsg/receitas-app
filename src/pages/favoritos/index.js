@@ -4,8 +4,7 @@ import Rodape from "components/Rodape";
 function Favoritos() {
   return (
     <>
-      <Cabecalho />
-      <Rodape />
+
     </>
   );
 }

@@ -1,12 +1,12 @@
-import Cabecalho from "components/Cabecalho";
 import styles from "./Incluir.module.css";
-import Rodape from "components/Rodape";
+import Ingrediente from "components/Ingrediente";
 
 function Incluir() {
   return (
     <>
-      <Cabecalho />
-      <Rodape />
+    
+      <Ingrediente/><Ingrediente/>
+      
     </>
   );
 }

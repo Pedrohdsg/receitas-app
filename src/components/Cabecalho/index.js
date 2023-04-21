@@ -7,7 +7,7 @@ function Cabecalho() {
   return (
     <header className={styles.cabecalho}>
       <Link to="./">
-        <img src={logo} alt="Logo do Receitas-App" width={350}></img>
+        <img src={logo} alt="Logo do Receitas-App" width={300}></img>
       </Link>
       <nav>
         <CabecalhoLink url="../">Home</CabecalhoLink>
