@@ -5,6 +5,7 @@ function Card( {id, titulo}){
         <>
         <div className={styles.container}>
             <h2>{titulo}</h2>
+            
         </div>
         </>
     )
