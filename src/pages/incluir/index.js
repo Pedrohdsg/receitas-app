@@ -5,7 +5,7 @@ function Incluir() {
   return (
     <>
     
-      <Ingrediente/><Ingrediente/>
+      <Ingrediente/>
       
     </>
   );

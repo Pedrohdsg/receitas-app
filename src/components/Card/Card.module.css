@@ -1,12 +1,12 @@
 .container{
-    padding: 0 0 1em 0;
-    margin-top: .5em;
-    width: 202px;
+    padding: 1em;
+    margin-top: 7;
+    width: 300px;
     background-color: var(--laranjaClaro);
     border-radius: 12px;
     border-style: solid;
-    border-color: brown;
-    display: flex;
+    border-color: rgb(141, 25, 25);
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
 }
