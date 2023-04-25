@@ -1,12 +1,12 @@
 .ingredientes {
   background-color: var(--laranjaClaro);
-  padding: 1em;
+  padding: 1.5em;
   width: 90%;
   border-radius: 16px;
   border-color: brown;
   border-style: dotted;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .text {
