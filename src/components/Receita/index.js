@@ -1,13 +1,10 @@
-import Ingrediente from 'components/Ingrediente';
-import styles from './Receita.module.css'
-import ModoDePreparo from 'components/ModoDePreparo';
+import styles from './Receita.module.css';
 
-function Receita(){
+const Receita = ({  }) => {
     return (
         <>
-        <h2></h2>
-        <Ingrediente/>
-        <ModoDePreparo/>
+        
+         
         </>
     )
 }

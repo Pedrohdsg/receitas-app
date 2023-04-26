@@ -1,25 +1,86 @@
+import { useState } from "react";
 import styles from "./Ingrediente.module.css";
+import Campo from "components/Campo";
+import Selecao from "components/Select";
+import ModoDePreparo from "./../ModoDePreparo/index";
 
-function Ingrediente() {
+const ingredientesReceita = [];
+const receita = [];
+
+const Ingrediente = ({}) => {
+  const [item, setItem] = useState("");
+  const [quantidade, setQuantidade] = useState("");
+  const [unidade, setUnidade] = useState("");
+  const [modo, setModo] = useState("");
+
+  const incluirItem = () => {
+    console.log(item, quantidade, unidade);
+
+    ingredientesReceita.push({
+      ing: item,
+      qtd: quantidade,
+      uni: unidade,
+    });
+
+    console.log(ingredientesReceita);
+  };
+
+  const aoSalvar = () => {
+    receita.push({
+      ingredientesReceita,
+      modo,
+    });
+
+    console.log(receita)
+  };
+
   return (
     <>
-      <div className={styles.ingredientes}>
-        <input type="text" className={styles.text} />
-        <input type="number"  min='0' className={styles.number} />
-        <select className={styles.select}>
-          <option value="g">gramas</option>
-          <option value="xc">xícaras</option>
-          <option value="cs">colher sopa</option>
-          <option value="cc">colher chá</option>
-          <option value="un">unidades</option>
-          <option value="ml">mililitros(ml)</option>
-          <option value="a gosto">à gosto</option>
-          <option value="pitada">pitada</option>
-        </select>
-        <input type="button" value="Incluir item" className={styles.btn} onClick />
-      </div>
+      <form>
+        <Campo
+          obrigatorio={true}
+          label="Ingrediente: "
+          placeholder="Digite o ingrediente"
+          valor={item}
+          aoAlterado={(valor) => setItem(valor)}
+          type="text"
+        />
+        <Campo
+          obrigatorio={true}
+          label="Qtd: "
+          placeholder="Digite a quantidade"
+          valor={quantidade}
+          aoAlterado={(valor) => setQuantidade(valor)}
+          type="number"
+        />
+        <Selecao
+          label="un"
+          placeholder="Unidade de medida"
+          valor={unidade}
+          aoAlterado={(valor) => setUnidade(valor)}
+        />
+
+        <input
+          type="button"
+          value="Incluir item"
+          className={styles.btn}
+          onClick={incluirItem}
+        />
+
+        <ModoDePreparo
+        valor={modo}
+        aoAlterado={(valor) => setModo(valor)}
+        />
+
+        <input
+          type="button"
+          value="Concluído"
+          className={styles.btn}
+          onClick={aoSalvar}
+        />
+      </form>
     </>
   );
-}
+};
 
 export default Ingrediente;
