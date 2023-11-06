@@ -1,0 +1,33 @@
+.ingredientes {
+  background-color: var(--laranjaClaro);
+  padding: 1.5em;
+  width: 90%;
+  border-radius: 16px;
+  border-color: brown;
+  border-style: dotted;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 56%;
+  background-color: var(--laranja);
+  
+}
+
+.number {
+  width: 12%;
+  background-color: var(--laranja);
+}
+
+.select {
+    width: 24%;
+    background-color: var(--laranja);
+}
+
+.btn {
+  background-color: var(--laranja);
+  border-radius: 12px;
+  font-weight: bold;
+  border-color: brown;
+}

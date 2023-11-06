@@ -1,0 +1,12 @@
+.form {
+    width: 95%;
+    color: brown;
+}
+
+.texto {
+    width: 102%;
+    justify-content: center;
+    color: brown;
+    font-weight: bold;
+    background-color: var(--laranjaClaro);    
+}

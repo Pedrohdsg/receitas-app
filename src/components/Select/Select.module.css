@@ -1,0 +1,6 @@
+.selecao {
+    border-radius: 4em;
+    border-color: var(--laranjaEscuro);
+    background-color: var(--laranjaClaro);    
+    font-weight: bolder;
+}
